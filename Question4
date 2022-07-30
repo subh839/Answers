@@ -1,0 +1,21 @@
+
+
+
+
+Only js function:
+const arr =[
+  {  "dressname": "shirt", "gender": "male","price": "1000-1500" },
+  {  "dressname": "pant", "gender": "male", "price": "1500-2000"  },
+  { "dressname": "Dhoti","gender": "male","price": "1000-1500" },
+  { "dressname": "tie","gender": "male","price": "above2000" },
+  { "dressname": "western","gender": "female","price": "1000-1500" },
+  { "dressname": "saari","gender": "female","price": "1500-2000" },
+  { "dressname": "salwar", "gender": "female ","price": "2000" }
+
+];
+
+var filtered = arr.filter(function(item) {
+    return item.gender==='male';
+    // only showing those which are male 
+});
+console.log(filtered);
