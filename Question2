@@ -1,0 +1,12 @@
+Redux middleware function provides a medium to interact with dispatched action before they reach the reducer.
+Customized middleware functions can be created by writing high order functions (a function that returns another function)and
+which wraps around some logic. Multiple middlewares can be combined together to add new functionality,
+and each middleware requires no knowledge of what came before and after.
+
+
+First need to import the applyMiddleware function from Redux like this:
+
+import { applyMiddleware } from "redux";
+
+
+Middleware helps with logging, error reporting, making asynchronous requests, and a whole lot more.
